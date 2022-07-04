@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+
+:root {
+    --font:'Lato', sans-serif;
+}
+
+* {
+    font-family: var(--font);
+}
