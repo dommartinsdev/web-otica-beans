@@ -1,8 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<%- include('../../components/head/head'); %> 
-<body>
-    <%- include('../../components/navigation/navigation'); %>
-    <%- include('../../components/footer/footer'); %>
-</body>
-</html>
+<style>
+    .ob-home {
+        width: 100%;
+    }
+    .ob-home-sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #FF9595;
+        height: 100vh;
+        padding: 50px;
+        position: fixed;
+    }
+    .ob-home-sidebar-brand img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .ob-home-sidebar-navigation .nav-link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+    .ob-home-sidebar-navigation .nav-link:hover {
+        color: #fff;
+    }
+    .ob-home-sidebar-footer p {
+        color: #fff;
+    }
+    .ob-home-content {
+        margin-left: 25%;
+    }
+    .ob-home-content img {
+        width: 100%;
+        display: block;
+    }
+    .ob-home-content-01 {
+        padding: 60px 30px;
+        text-align: center;
+    }
+    .ob-home-content-01 h2 {
+        font-size: 35px;
+        font-weight: 600;
+        color: #333;
+        font-family: var(--font-display);
+        margin-bottom: 10px;
+    }
+    .ob-home-content-01 h3 {
+        font-size: 24px;
+        color: rgb(110, 110, 110);
+    }
+    .ob-home-content-01 p {
+        font-size: 18px;
+    }
+    .ob-home-content-02 {
+        padding: 60px 30px;
+        text-align: center;
+        background-color: #fca6a6;
+    }
+    .ob-home-content-02 h2 {
+        font-size: 35px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-family: var(--font-display);
+        margin-bottom: 10px;
+    }
+    .ob-home-content-02 h3 {
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+    }
+    .ob-home-content-02 p {
+        color: #fff;
+        font-size: 18px;
+        margin: 0px;
+    }
+    @media (max-width: 575.98px) {}
+    @media (max-width: 767.98px) {}
+    @media (max-width: 991.98px) {
+        .ob-home-content img {
+            width: 100%;
+        }
+        .ob-home-content {
+            margin-left: 0%;
+        }
+        .ob-home-content {
+            display: block;
+        }
+        .ob-home-sidebar {
+            display: none;
+        }
+    }
+    @media (max-width: 1199.98px) {}
+    @media (max-width: 1399.98px) {}
+</style>
+<section>
+    <%-include('../../components/head/head');%> 
+    <%-include('../../components/navigation/navigation');%>
+    <section class="ob-home ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 ob-home-sidebar">
+                    <div class="ob-home-sidebar-brand text-center">
+                        <img src="icons/brand.svg" alt="">
+                    </div>
+                    <div class="ob-home-sidebar-navigation">
+                        <div class="nav text-center flex-column">
+                            <a class="nav-link" href="/">INÍCIO</a>
+                            <a class="nav-link" href="/service">SERVIÇO</a>
+                            <a class="nav-link" href="/about">SOBRE NÓS</a>
+                            <a class="nav-link" href="/contact">CONTATO</a>
+                        </div>
+                    </div>
+                    <div class="ob-home-sidebar-footer">
+                        <p>Especialistas para a sua visão</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 ob-home-content p-0">
+                    <img src="images/img-01.png" alt="">
+                    <div class="ob-home-content-01">
+                        <h2>Especialistas certificados de saúde ocular</h2>
+                        <h3>Este é o lugar onde o seu texto começa. Pode clicar aqui e começar a digitar. Illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</h3>
+                        <p>Este é o lugar onde o seu texto começa. Pode clicar aqui e começar a digitar. Iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
+                    </div>
+                    <div class="ob-home-content-02">
+                        <h2>Estamos ansiosos pela sua visita</h2>
+                        <h3>Clique aqui e comece a digitar. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</h3>
+                        <div class="row mt-5">
+                            <div class="col-lg-6 text-lg-end mb-3">
+                                <p><strong>Ótica Águia</strong></p>
+                                <p>Rua do Ouro 797, 4150-555 Porto Alegre</p>
+                                <p>E-mail: demo@webnode.com</p>
+                                <p>Telefone: 226 106 312</p>
+                            </div>
+                            <div class="col-lg-6 text-lg-start">
+                                <p><strong>Horários</strong></p>
+                                <p>2ª a 6ª feira: 8h - 18h</p>
+                                <p>Sábado: 8h - 12h30</p>
+                                <p>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%-include('../../components/footer/footer');%>
+</section>
+<script>
+    
+</script>
