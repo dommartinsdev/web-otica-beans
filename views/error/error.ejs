@@ -1,12 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Error</h1>
-</body>
-</html>
+<style>
+    .ob-home {
+        width: 100%;
+    }
+    .ob-home-sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #FF9595;
+        height: 100vh;
+        padding: 50px;
+        position: fixed;
+    }
+    .ob-home-sidebar-brand img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .ob-home-sidebar-navigation .nav-link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+    .ob-home-sidebar-navigation .nav-link:hover {
+        color: #fff;
+    }
+    .ob-home-sidebar-footer p {
+        color: #fff;
+    }
+    .ob-home-content {
+        margin-left: 25%;
+    }
+    .ob-home-content img {
+        width: 100%;
+        display: block;
+    }
+    .ob-home-content-01 {
+        padding: 60px 30px;
+        text-align: center;
+    }
+    .ob-home-content-01 h2 {
+        font-size: 35px;
+        font-weight: 600;
+        color: #333;
+        font-family: var(--font-display);
+        margin-bottom: 10px;
+    }
+    .ob-home-content-01 h3 {
+        font-size: 24px;
+        color: rgb(110, 110, 110);
+    }
+    .ob-home-content-01 p {
+        font-size: 18px;
+    }
+    .ob-home-content-box {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ob-home-content-box img {
+        width: 65%;
+    }
+    @media (max-width: 575.98px) {}
+    @media (max-width: 767.98px) {}
+    @media (max-width: 991.98px) {
+        .ob-home-content img {
+            width: 100%;
+        }
+        .ob-home-content {
+            margin-left: 0%;
+        }
+        .ob-home-content {
+            display: block;
+        }
+        .ob-home-sidebar {
+            display: none;
+        }
+    }
+    @media (max-width: 1199.98px) {}
+    @media (max-width: 1399.98px) {}
+</style>
+<section>
+    <%-include('../../components/head/head');%> 
+    <%-include('../../components/navigation/navigation');%>
+    <section class="ob-home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 ob-home-sidebar">
+                    <div class="ob-home-sidebar-brand text-center">
+                        <img src="icons/brand.svg" alt="">
+                    </div>
+                    <div class="ob-home-sidebar-navigation">
+                        <div class="nav text-center flex-column">
+                            <a class="nav-link" href="/">INÍCIO</a>
+                            <a class="nav-link" href="/service">SERVIÇO</a>
+                            <a class="nav-link" href="/about">SOBRE NÓS</a>
+                            <a class="nav-link" href="/contact">CONTATO</a>
+                        </div>
+                    </div>
+                    <div class="ob-home-sidebar-footer">
+                        <p>Especialistas para a sua visão</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 ob-home-content p-0">
+                    <div class="ob-home-content-box">
+                        <img src="icons/icon-erro.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%-include('../../components/footer/footer');%>
+</section>
+<script>
+ 
+</script>

@@ -9,7 +9,8 @@ app.set('view engine', 'ejs')
 app.use('/', router)
 
 app.use(function(req, res,) {
-    res.status(404).render('error/error');
+    let title = 'Ótica Beans - Erro 404'
+    res.status(404).render('error/error',{title});
 });
 
 app.listen(port)
