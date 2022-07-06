@@ -18,6 +18,10 @@
     <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
    
 </p>
+<br/>
+<p align="center">
+  <img alt="" src="github/banner.svg" width="100%">
+</p>
 
 ## 🚀 Tecnologias
 
