@@ -1,0 +1,125 @@
+<style>
+    .ob-contact {
+        width: 100%;
+    }
+    .ob-contact-sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #FF9595;
+        height: 100vh;
+        padding: 50px;
+        position: fixed;
+    }
+    .ob-contact-sidebar-brand img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .ob-contact-sidebar-navigation .nav-link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+    .ob-contact-sidebar-navigation .nav-link:hover {
+        color: #fff;
+    }
+    .ob-contact-sidebar-footer p {
+        color: #fff;
+    }
+    .ob-contact-content {
+        margin-left: 25%;
+    }
+    .ob-contact-content img {
+        width: 100%;
+        display: block;
+    }
+    .ob-contact-content-form {
+        padding: 60px 30px;
+    }
+    .ob-contact-content-form h4 {
+        font-weight: 600;
+    }
+    .ob-contact-content-form p {
+        margin: 0px;
+        font-size: 18px;
+    }
+    @media (max-width: 575.98px) {}
+    @media (max-width: 767.98px) {}
+    @media (max-width: 991.98px) {
+        .ob-contact-content img {
+            width: 100%;
+        }
+        .ob-contact-content {
+            margin-left: 0%;
+        }
+        .ob-contact-content {
+            display: block;
+        }
+        .ob-contact-sidebar {
+            display: none;
+        }
+    }
+    @media (max-width: 1199.98px) {}
+    @media (max-width: 1399.98px) {}
+</style>
+<section>
+    <%-include('../../components/head/head');%> 
+    <%-include('../../components/navigation/navigation');%>
+    <section class="ob-contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 ob-contact-sidebar">
+                    <div class="ob-contact-sidebar-brand text-center">
+                        <img src="icons/brand.svg" alt="">
+                    </div>
+                    <div class="ob-contact-sidebar-navigation">
+                        <div class="nav text-center flex-column">
+                            <a class="nav-link" href="/">INÍCIO</a>
+                            <a class="nav-link" href="/service">SERVIÇO</a>
+                            <a class="nav-link" href="/about">SOBRE NÓS</a>
+                            <a class="nav-link" href="/contact">CONTATO</a>
+                        </div>
+                    </div>
+                    <div class="ob-contact-sidebar-footer">
+                        <p>Especialistas para a sua visão</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 ob-contact-content p-0">
+                    <img src="images/img-08.png" alt="">
+                    <div class="ob-contact-content-form">
+                        <div class="row">
+                            <div class="col-lg-8 mb-3">
+                                <label for="#" class="lead mb-1">Nome</label>
+                                <input class="form-control form-control-lg rounded-0 mb-3" type="text">
+                                <label for="#" class="lead mb-1">Email</label>
+                                <input class="form-control form-control-lg rounded-0 mb-3" type="email">
+                                <label for="#" class="lead mb-1">Mensagem</label>
+                                <textarea cols="30" rows="4" class="form-control form-control-lg rounded-0 mb-3"></textarea>
+                                <input type="submit" value="Enviar" class="btn btn-lg rounded-0 btn-dark">
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>Endereço</h4>
+                                <p>Rua do Ouro 797, 4150-555 Porto Alegre</p>
+                                <h4>Email</h4>
+                                <p>oticabeans@gmail.com</p>
+                                <h4>Telefone</h4>
+                                <p>51 99988-6633</p>
+                                <h4>Horários</h4>
+                                <p>Seg/Sex: 07:00-18:00</p>
+                                <p>Sab: 07:00-12:00</p>
+                                <p>Dom: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%-include('../../components/footer/footer');%>
+</section>
+<script>
+ 
+</script>
