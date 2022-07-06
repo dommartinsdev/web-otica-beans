@@ -7,6 +7,7 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.use('/', router)
+app.use('/service', router)
 
 app.use(function(req, res,) {
     let title = 'Ótica Beans - Erro 404'

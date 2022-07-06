@@ -1,0 +1,114 @@
+<style>
+    .ob-service {
+        width: 100%;
+    }
+    .ob-service-sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #FF9595;
+        height: 100vh;
+        padding: 50px;
+        position: fixed;
+    }
+    .ob-service-sidebar-brand img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .ob-service-sidebar-navigation .nav-link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+    .ob-service-sidebar-navigation .nav-link:hover {
+        color: #fff;
+    }
+    .ob-service-sidebar-footer p {
+        color: #fff;
+    }
+    .ob-service-content {
+        margin-left: 25%;
+    }
+    .ob-service-content img {
+        width: 100%;
+        display: block;
+    }
+    .ob-service-content-card {
+        padding: 45px;
+    }
+    .ob-service-content-card h3 {
+        font-family: var(--font-display);
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .ob-service-content-card p {
+        font-size: 18px;
+        color: #6e6e6e;
+    }
+
+    @media (max-width: 575.98px) {}
+    @media (max-width: 767.98px) {}
+    @media (max-width: 991.98px) {
+        .ob-service-content img {
+            width: 100%;
+        }
+        .ob-service-content {
+            margin-left: 0%;
+        }
+        .ob-service-content {
+            display: block;
+        }
+        .ob-service-sidebar {
+            display: none;
+        }
+    }
+    @media (max-width: 1199.98px) {}
+    @media (max-width: 1399.98px) {}
+</style>
+<section>
+    <%-include('../../components/head/head');%> 
+    <%-include('../../components/navigation/navigation');%>
+    <section class="ob-service">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 ob-service-sidebar">
+                    <div class="ob-service-sidebar-brand text-center">
+                        <img src="icons/brand.svg" alt="">
+                    </div>
+                    <div class="ob-service-sidebar-navigation">
+                        <div class="nav text-center flex-column">
+                            <a class="nav-link" href="/">INÍCIO</a>
+                            <a class="nav-link" href="/service">SERVIÇO</a>
+                            <a class="nav-link" href="/about">SOBRE NÓS</a>
+                            <a class="nav-link" href="/contact">CONTATO</a>
+                        </div>
+                    </div>
+                    <div class="ob-service-sidebar-footer">
+                        <p>Especialistas para a sua visão</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 ob-service-content p-0">
+                    <img src="/images/img-06.png" alt="">
+                    <div class="container">
+                        <div class="row ob-service-content-card">
+                            <% cards.forEach(function(card) { %>
+                                <div class="col-lg-6">
+                                    <h3><%= card.title %></h3>
+                                    <p><%= card.description %></p>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%-include('../../components/footer/footer');%>
+</section>
+<script>
+ 
+</script>
