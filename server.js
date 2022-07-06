@@ -9,6 +9,7 @@ app.set('view engine', 'ejs')
 app.use('/', router)
 app.use('/service', router)
 app.use('/about', router)
+app.use('/contact', router)
 
 app.use(function(req, res,) {
     let title = 'Ótica Beans - Erro 404'
