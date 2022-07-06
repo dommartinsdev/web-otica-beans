@@ -1,8 +1,8 @@
 <style>
-    .ob-service {
+    .ob-about {
         width: 100%;
     }
-    .ob-service-sidebar {
+    .ob-about-sidebar {
         width: 100%;
         display: flex;
         align-items: center;
@@ -13,39 +13,39 @@
         padding: 50px;
         position: fixed;
     }
-    .ob-service-sidebar-brand img {
+    .ob-about-sidebar-brand img {
         width: 250px;
         margin-bottom: 15px;
     }
-    .ob-service-sidebar-navigation .nav-link {
+    .ob-about-sidebar-navigation .nav-link {
         font-size: 18px;
         color: #fff;
         text-decoration: none !important;
         font-weight: 600;
     }
-    .ob-service-sidebar-navigation .nav-link:hover {
+    .ob-about-sidebar-navigation .nav-link:hover {
         color: #fff;
     }
-    .ob-service-sidebar-footer p {
+    .ob-about-sidebar-footer p {
         color: #fff;
     }
-    .ob-service-content {
+    .ob-about-content {
         margin-left: 25%;
     }
-    .ob-service-content img {
+    .ob-about-content img {
         width: 100%;
         display: block;
     }
-    .ob-service-content-card {
+    .ob-about-content-card {
         padding: 45px;
     }
-    .ob-service-content-card h3 {
+    .ob-about-content-card h3 {
         font-family: var(--font-display);
         font-size: 30px;
         margin-bottom: 15px;
         color: #333;
     }
-    .ob-service-content-card p {
+    .ob-about-content-card p {
         font-size: 18px;
         color: #6e6e6e;
     }
@@ -53,16 +53,16 @@
     @media (max-width: 575.98px) {}
     @media (max-width: 767.98px) {}
     @media (max-width: 991.98px) {
-        .ob-service-content img {
+        .ob-about-content img {
             width: 100%;
         }
-        .ob-service-content {
+        .ob-about-content {
             margin-left: 0%;
         }
-        .ob-service-content {
+        .ob-about-content {
             display: block;
         }
-        .ob-service-sidebar {
+        .ob-about-sidebar {
             display: none;
         }
     }
@@ -72,14 +72,14 @@
 <section>
     <%-include('../../components/head/head');%> 
     <%-include('../../components/navigation/navigation');%>
-    <section class="ob-service">
+    <section class="ob-about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 ob-service-sidebar">
-                    <div class="ob-service-sidebar-brand text-center">
+                <div class="col-lg-3 ob-about-sidebar">
+                    <div class="ob-about-sidebar-brand text-center">
                         <img src="icons/brand.svg" alt="">
                     </div>
-                    <div class="ob-service-sidebar-navigation">
+                    <div class="ob-about-sidebar-navigation">
                         <div class="nav text-center flex-column">
                             <a class="nav-link" href="/">INÍCIO</a>
                             <a class="nav-link" href="/service">SERVIÇO</a>
@@ -87,14 +87,14 @@
                             <a class="nav-link" href="/contact">CONTATO</a>
                         </div>
                     </div>
-                    <div class="ob-service-sidebar-footer">
+                    <div class="ob-about-sidebar-footer">
                         <p>Especialistas para a sua visão</p>
                     </div>
                 </div>
-                <div class="col-lg-9 ob-service-content p-0">
+                <div class="col-lg-9 ob-about-content p-0">
                     <img src="/images/img-06.png" alt="">
                     <div class="container">
-                        <div class="row ob-service-content-card">
+                        <div class="row ob-about-content-card">
                             <% cards.forEach(function(card) { %>
                                 <div class="col-lg-6">
                                     <h3><%= card.title %></h3>

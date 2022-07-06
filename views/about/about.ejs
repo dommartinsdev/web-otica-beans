@@ -1,0 +1,128 @@
+<style>
+    .ob-service {
+        width: 100%;
+    }
+    .ob-service-sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #FF9595;
+        height: 100vh;
+        padding: 50px;
+        position: fixed;
+    }
+    .ob-service-sidebar-brand img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .ob-service-sidebar-navigation .nav-link {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none !important;
+        font-weight: 600;
+    }
+    .ob-service-sidebar-navigation .nav-link:hover {
+        color: #fff;
+    }
+    .ob-service-sidebar-footer p {
+        color: #fff;
+    }
+    .ob-service-content {
+        margin-left: 25%;
+    }
+    .ob-service-content img {
+        width: 100%;
+        display: block;
+    }
+    .ob-service-content-text {
+        padding: 45px;
+    }
+    .ob-service-content-text h4 {
+        color: #666666;
+        margin-bottom: 30px;
+    }
+    .ob-service-content-text p {
+        font-size: 18px;
+    }
+    .ob-service-content-images {
+        display: flex;
+        align-items: center;
+    }
+    .ob-service-content-images img {
+        width: 33%;
+    }
+
+    @media (max-width: 575.98px) {}
+    @media (max-width: 767.98px) {}
+    @media (max-width: 991.98px) {
+        .ob-service-content img {
+            width: 100%;
+        }
+        .ob-service-content {
+            margin-left: 0%;
+        }
+        .ob-service-content {
+            display: block;
+        }
+        .ob-service-sidebar {
+            display: none;
+        }
+        .ob-service-content-text {
+            padding: 45px 5px;
+        }
+        .ob-service-content-images {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 1199.98px) {}
+    @media (max-width: 1399.98px) {}
+</style>
+<section>
+    <%-include('../../components/head/head');%> 
+    <%-include('../../components/navigation/navigation');%>
+    <section class="ob-service">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 ob-service-sidebar">
+                    <div class="ob-service-sidebar-brand text-center">
+                        <img src="icons/brand.svg" alt="">
+                    </div>
+                    <div class="ob-service-sidebar-navigation">
+                        <div class="nav text-center flex-column">
+                            <a class="nav-link" href="/">INÍCIO</a>
+                            <a class="nav-link" href="/service">SERVIÇO</a>
+                            <a class="nav-link" href="/about">SOBRE NÓS</a>
+                            <a class="nav-link" href="/contact">CONTATO</a>
+                        </div>
+                    </div>
+                    <div class="ob-service-sidebar-footer">
+                        <p>Especialistas para a sua visão</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 ob-service-content p-0">
+                    <img src="/images/img-07.png" alt="">
+                    <div class="container">
+                        <div class="row ob-service-content-text">
+                            <h4>Este é o lugar onde o seu texto começa. Pode clicar aqui e começar a digitar. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore.</h4>
+                            
+                            <p>Este é o lugar onde o seu texto começa. Pode clicar aqui e começar a digitar. Porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem.</p>
+                            <div class="ob-service-content-images">
+                                <img src="images/img-03.png" alt="">
+                                <img src="images/img-04.png" alt="">
+                                <img src="images/img-05.png" alt="">
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%-include('../../components/footer/footer');%>
+</section>
+<script>
+ 
+</script>

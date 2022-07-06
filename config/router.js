@@ -27,5 +27,8 @@ router.get('/service', (req, res) => {
 	]
 	res.render('services/service', {title, cards})
 })
-
+router.get('/about', (req, res) => {
+	let title = 'Ótica Beans - Sobre nós'
+	res.render('about/about', {title})
+})
 module.exports = router
